@@ -14,11 +14,12 @@ Please keep that in mind.
 
 You'll need the following to use the application:
 
-- A Twilio account.
+- A Twilio account with a phone number that can receive phone calls.
   [Sign up for free today][twilio-signup] if you don't have an account.
 - PHP 8.4 or above
 - [Composer][composer] installed globally
 - [ngrok][ngrok] for testing the application locally
+- A mobile phone that can make calls
 - Your preferred code editor or IDE (such as PhpStorm or neovim)
 - Some terminal experience is helpful, though not required
 
