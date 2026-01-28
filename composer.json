@@ -16,9 +16,12 @@
         "Twilio"
     ],
     "require": {
+        "monolog/monolog": "^3.10",
         "php-di/slim-bridge": "^3.4",
         "slim/psr7": "^1.8",
-        "slim/slim": "^4.15"
+        "slim/slim": "^4.15",
+        "twilio/sdk": "^8.10",
+        "vlucas/phpdotenv": "^5.6"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.93",
@@ -45,5 +48,11 @@
         "psr-4": {
             "AppTest\\": "test/"
         }
+    },
+    "scripts": {
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S 0.0.0.0:8080 -t public"
+        ]
     }
 }
